@@ -291,7 +291,7 @@ class JdUnionOpenGoodsQueryRequest implements Request
     {
         if (!$this->apiParas)
             return '{}';
-        
+
         return json_encode([
             'goodsReqDTO' => $this->apiParas,
         ], JSON_UNESCAPED_UNICODE);

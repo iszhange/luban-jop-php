@@ -5,14 +5,14 @@
 ```php
 require __DIR__ . '/vendor/autoload.php';
 
-use LuBan\Top\Client;
-use LuBan\Top\Requests\TbkItemInfoGetRequest;
+use LuBan\Jop\Client;
+use LuBan\Jop\Requests\JdUnionOpenGoodsQueryRequest;
 
 $c = new Client();
 $c->appKey = "You're appkey";
-$c->secretKey = "You're appSecret";
-$req = new TbkItemInfoGetRequest();
-$req->setNumIids('627565398166');
+$c->appSecret = "You're appSecret";
+$req = new JdUnionOpenGoodsQueryRequest();
+$req->setKeyword('上衣');
 $result = $c->execute($req);
 var_dump($result);
 ```
