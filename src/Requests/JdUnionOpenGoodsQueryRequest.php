@@ -291,9 +291,7 @@ class JdUnionOpenGoodsQueryRequest implements Request
     {
         if (!$this->apiParas)
             return '{}';
-
-//        $this->apiParas['@type'] = 'com.jd.union.open.gateway.api.dto.goods.base.GoodsReq';
-        return json_encode($this->apiParas, JSON_UNESCAPED_UNICODE);
+        
         return json_encode([
             'goodsReqDTO' => $this->apiParas,
         ], JSON_UNESCAPED_UNICODE);
