@@ -1,0 +1,38 @@
+{
+    "name": "luban/jop",
+    "authors": [
+        {
+            "name": "zhange",
+            "email": "kenphp@yeah.net",
+            "homepage": "https://www.iszhange.com",
+            "role": "Developer"
+        }
+    ],
+    "description": "京东开放平台SDK",
+    "keywords": [
+        "鲁班",
+        "京东开放平台"
+    ],
+    "type": "library",
+    "license": ["MIT"],
+    "support": {
+        "email": "kenphp@yeah.net",
+        "issues": "https://github.com/iszhange/luban-jop-php/issues",
+        "wiki": "https://github.com/iszhange/luban-jop-php/wiki"
+    },
+    "require": {
+        "php": ">=7.2",
+        "ext-curl": "*",
+        "ext-json": "*",
+        "ext-simplexml": "*",
+        "ext-mbstring": "*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "8"
+    },
+    "autoload": {
+        "psr-4": {
+            "LuBan\\Jop\\": "src/"
+        }
+    }
+}
