@@ -111,8 +111,8 @@ class JdUnionOpenGoodsQueryRequest implements Request
 
     public function setSkuIds(array $val)
     {
-        $this->skuIds = json_encode($val);
-        $this->apiParas['skuIds'] = json_encode($val);
+        $this->skuIds = $val;
+        $this->apiParas['skuIds'] = $val;
     }
 
     public function setKeyword($val)

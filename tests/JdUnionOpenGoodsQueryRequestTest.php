@@ -17,7 +17,7 @@ final class JdUnionOpenGoodsQueryRequestTest extends TestCase
         $c->appKey = $appkey;
         $c->appSecret = $secret;
         $req = new JdUnionOpenGoodsQueryRequest();
-        $req->setKeyword('上衣');
+        $req->setSkuIds([100017745496]);
         $result = $c->execute($req);
         var_dump($result);
         $this->assertArrayHasKey('jd_union_open_goods_query_responce', $result);
