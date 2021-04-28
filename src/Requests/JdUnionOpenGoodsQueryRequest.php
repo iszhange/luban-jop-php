@@ -87,13 +87,13 @@ class JdUnionOpenGoodsQueryRequest implements Request
 
     public function setCid2($val)
     {
-        $this->cid1 = (int)$val;
+        $this->cid2 = (int)$val;
         $this->apiParas['cid2'] = (int)$val;
     }
 
     public function setCid3($val)
     {
-        $this->cid1 = (int)$val;
+        $this->cid3 = (int)$val;
         $this->apiParas['cid3'] = (int)$val;
     }
 
